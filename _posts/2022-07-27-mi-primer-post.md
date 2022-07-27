@@ -23,102 +23,106 @@ Puede que muchos no lo sepan, pero por lo general los procesadores de texto ofre
 
 
 - Buscar palabras repetidas
-
-    ```regex
+    ```
     \b(\w+\b *)\b\1{1,}
     ```
 
 
 - Buscar puntuación dentro y fuera de final de cita
-
-    ```regexp
+    ```
     [.,;:]”
     ```
     
-    ```.regexp
+    ```
+    "."
     ”[.,;:]
     ```
 
 - Convertir tres puntos seguidos “`...`” en el caracter de puntos suspensivos “`…`”
-Búsqueda: 
 
-```.regex
-[.]{3}
-```
-Reemplazo: 
-```regexp
-…
-```
+  Búsqueda: 
+  ```"."
+  [.]{3}
+  ```
+
+  Reemplazo: 
+  ```
+  …
+  ```
 
 - Buscar cualquier caracter repetido, siempre que no sea una letra, número o espacio.
-Ahora que tenemos los tres puntos, podemos buscar cualquier caracter repetido sin preocuparnos por modificar los tres puntos, que son gramaticalmente aceptables. Ejemplos: `?? // ;; ,, ,,, `
+  Ahora que tenemos los tres puntos, podemos buscar cualquier caracter repetido sin preocuparnos por modificar los tres puntos, que son gramaticalmente aceptables. Ejemplos: `?? // ;; ,, ,,, `
 
-Búsqueda: 
-```regexp
-([^\w\d\s])\1{1,}`
-```
-Reemplazo: 
-```regexp
-$1
-```
+  Búsqueda: 
+  ```
+  ([^\w\d\s])\1{1,}`
+  ```
+  Reemplazo: 
+  ```
+  $1
+  ```
 
 - Caracteres diferentes consecutivos 
-Después de haber reemplazado aquellos signos duplicados, podemos buscar aquellos signos consecutivos que no son una repetición, pero que pueden ser repeticiones.
+  Después de haber reemplazado aquellos signos duplicados, podemos buscar aquellos signos consecutivos que no son una repetición, pero que pueden ser repeticiones.
 
-Búsqueda:
+  Búsqueda:
+  ```
+  ([^\w\d\s]){2,}`
+  ```
 
-```regexp
-([^\w\d\s]){2,}`
-```
-
-Ejemplos: `., ;: ,. ?!` 
+  Ejemplos: `., ;: ,. ?!` 
 
 - Eliminar espacio(s) a inicio y final de párrafo
-Búsqueda:
-```regexp
-^ +| +$()`
-```
-Reemplazo: 
-```regexp
-$1`
-```
+
+  Búsqueda:
+  ```
+  ^ +| +$()`
+  ```
+
+  Reemplazo: 
+  ```
+  $1`
+  ```
 
 - Símbolos abiertos, pero no cerrados `‘ “ ( [ ¿ ¡`
 
-```regexp
-[“][^”\n]*\n|[(][^)\n]*\n|[[][^\]\n]*\n|[‘][^’\n]*\n|[¿][^?\n]*\n|[¡][^!\n]*\n`
-```
+  ```
+  [“][^”\n]*\n|[(][^)\n]*\n|[[][^\]\n]*\n|[‘][^’\n]*\n|[¿][^?\n]*\n|[¡][^!\n]*\n`
+  ```
 
-- Símbolos cerrados, pero no abiertos `’ ” ) ] ? !`
+  - Símbolos cerrados, pero no abiertos `’ ” ) ] ? !`
 
-```regexp
-^[^\n“]*”|^[^\n‘]*’|^[^\n(]*\)|^[^\n[]*]|^[^\n¿]*?|^[^\n¡]*!`
-```
-
-- Párrafos que no terminan en puntuación admitida
-Búsqueda: 
-```regexp
-[^.:?!\]]$`
-```
+  ```
+  ^[^\n“]*”|^[^\n‘]*’|^[^\n(]*\)|^[^\n[]*]|^[^\n¿]*?|^[^\n¡]*!`
+  ```
 
 - Párrafos que no terminan en puntuación admitida
-Búsqueda: 
-```regexp
-[^.:?!\]]$`
-```
+
+  Búsqueda:
+  ```
+  [^.:?!\]]$`
+  ```
+
+- Párrafos que no terminan en puntuación admitida
+
+  Búsqueda: 
+  ```
+  [^.:?!\]]$`
+  ```
 
 - Falsas comillas `' "` para reemplazar por las a propiadas `“”` o `‘’`
-Búsqueda: 
-```regexp
-['"]`
-```
+
+  Búsqueda: 
+  ```
+  ['"]`
+  ```
 
 
 
 ==Falta hacer la guía para puntuación antes y después de conjunciones y conectores gramaticales==
 
 Comma after a conjunction:  
-Regex: b(but|and|so|which|yet|or|except),  
+: b(but|and|so|which|yet|or|except),  
 Sigil:  b(but|and|so|which|yet|or|except),  
 Word: ”
 
@@ -127,18 +131,17 @@ Word: ”
 `\b(\w+\b *)\b\1{1,}`
 
 Para buscar las referencias pandoc [@key] seguidas de puntuación e inveertirlas.
-```regexp
+  ```
+  [\.?](?=[ [])(?! *[\n\da-z])
 
-[\.?](?=[ [])(?! *[\n\da-z])
-
-```
+  ```
 
 ==Buscar espacios antes de puntuación==
 
 - Reemplazar luego de punto con saltos de línea (En mi tesis)
 Sirve para adoptar el estilo de esccritura de una línea por oración el cual no afecta el output de pandoc. (Los inicios de cada línea no necesitan tener espacio, Pandoc lo corrige solito)
 
-```regexp
+```
 [\.?](?=[ [])(?! *[\n\da-z])`
 ```
 
