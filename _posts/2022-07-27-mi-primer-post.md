@@ -23,22 +23,26 @@ Puede que muchos no lo sepan, pero por lo general los procesadores de texto ofre
 
 
 - Buscar palabras repetidas
+
     ```regex
     \b(\w+\b *)\b\1{1,}
     ```
 
 
 - Buscar puntuación dentro y fuera de final de cita
+
     ```regexp
     [.,;:]”
     ```
-    ```regexp
+    
+    ```.regexp
     ”[.,;:]
     ```
 
 - Convertir tres puntos seguidos “`...`” en el caracter de puntos suspensivos “`…`”
 Búsqueda: 
-```regexp
+
+```.regex
 [.]{3}
 ```
 Reemplazo: 
@@ -61,7 +65,8 @@ $1
 - Caracteres diferentes consecutivos 
 Después de haber reemplazado aquellos signos duplicados, podemos buscar aquellos signos consecutivos que no son una repetición, pero que pueden ser repeticiones.
 
-Búsqueda: 
+Búsqueda:
+
 ```regexp
 ([^\w\d\s]){2,}`
 ```
