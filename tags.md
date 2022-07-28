@@ -1,5 +1,5 @@
 ---
-title: Tag Archive
+title: Etiquetas
 layout: tags
 permalink: /tags/
 show_excerpts: true

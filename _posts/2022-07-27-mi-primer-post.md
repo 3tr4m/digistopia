@@ -21,6 +21,14 @@ Puede que muchos no lo sepan, pero por lo general los procesadores de texto ofre
 <!—Hay que señalar los que son manuales y los que admiten reemplazo automático —
 
 
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
 
 - Buscar palabras repetidas
     ```

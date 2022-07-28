@@ -9,8 +9,6 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    cgi (0.3.2)
-    charlock_holmes (0.7.7)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -34,11 +32,6 @@ GEM
     ffi (1.15.5)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
-    github-linguist (7.22.1)
-      cgi
-      charlock_holmes (~> 0.7.7)
-      mini_mime (~> 1.0)
-      rugged (~> 1.0)
     github-pages (227)
       github-pages-health-check (= 1.17.9)
       jekyll (= 3.9.2)
@@ -213,7 +206,6 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
-    mini_mime (1.1.2)
     minima (2.5.1)
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
@@ -235,7 +227,6 @@ GEM
     rouge (3.26.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
-    rugged (1.5.0.1)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -265,7 +256,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  github-linguist
   github-pages
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.12)

@@ -1,16 +1,16 @@
 # Sample site navigation bar links
 
-- title: Home
+- title: Inicio
   url: /
 - title: Posts
   url: /posts/
-- title: Categories
+- title: Categorías
   url: /categories/
-- title: Tags
+- title: Etiquetas
   url: /tags/
 # - title: Recipes
 #   url: /recipes/
-- title: Search
+- title: Búsqueda
   url: /search/
 - title: GitHub
   url: https://github.com/msclzr
