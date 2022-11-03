@@ -4,6 +4,3 @@
 
 layout: home
 ---
-
-Esta es mi página.
-Quiero compartir varias guías para 

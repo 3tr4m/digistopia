@@ -12,5 +12,5 @@
 #   url: /recipes/
 - title: Búsqueda
   url: /search/
-- title: GitHub
-  url: https://github.com/msclzr
+- title: Sobre mí
+  url: /about

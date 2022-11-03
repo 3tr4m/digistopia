@@ -19,9 +19,9 @@ remote_theme: "mmistakes/so-simple-theme@3.2.0"
 skin: "/assets/css/skins/dark.css"
 
 locale: es
-title: "Mr. Roblog"
-description: "Un blog sobre privacidad, seguridad y tech tips"
-baseurl: "/Mr.Roblog" # the subpath of your site, e.g. /blog
+title: "DIGISTOPÍA"
+description: "<strong>Privacidad, Seguridad y Derechos Humanos en la distopía digital</strong>.<br>Proyectos, guías y reflexiones para la defensa de los DDHH.<br>También curiosidades y tips informáticos<br><br>— Linux, Android, FLOSS, plataformas sociodigitales, cultura abierta y más —"
+baseurl: "/digistopia" # the subpath of your site, e.g. /blog
 url: "https://msclzr.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/images/mr-roblog-logo.png" # path of site logo, e.g. "/assets/images/logo.png"
 date_format: "%B %-d, %Y"
@@ -122,7 +122,7 @@ author:
     #   url: https://instagram.com/mmistakes
     #   icon: fab fa-instagram
     - title: GitHub
-      url: https://github.com/msclzr
+      url: https://github.com/3tr4m
       icon: fab fa-github-square
 
 # Footer Links
@@ -134,7 +134,7 @@ footer_links:
   #   url: https://instagram.com/mmistakes
   #   icon: fab fa-instagram
   - title: GitHub
-    url: https://github.com/msclzr
+    url: https://github.com/3tr4m
     icon: fab fa-github-square
   - title: Feed
     url: atom.xml

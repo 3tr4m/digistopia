@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+# Bienvenido a Digistopía
 
-You can use the [editor on GitHub](https://github.com/msclzr/Mr.Roblog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Este es el repositorio de mi blog personal sobre privacidad seguridad y defensa de los Derechos Humanos en el ámbito digital.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Puedes visitar mi blog en el link y suscribirte al RSS en:
 
-### Markdown
+[msclzr.github.io/digistopia](https://msclzr.github.io/digistopia/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+También puedes seguir el blog en Substack, donde puedes suscribirte al boletín de e-mail, dejar comentarios y suscribirte al feed de RSS.
 
-```markdown
-Syntax highlighted code block
+[digistopia.substack.com](https://digistopia.substack.com)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/msclzr/Mr.Roblog/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+**Nota**: Dado que el proyecto del blog es reciente y tengo algunas diferencias irreconciliables con Github, pretendo mudarme a otro servicio de repositorio en la nube más privado en algún momento en los siguientes meses. De allí que, entre otras cosas, no quiera invertir tiempo en agregar funcionalidad de comentarios al blog.

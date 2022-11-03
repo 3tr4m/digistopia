@@ -10,7 +10,22 @@ last_modified_at: 2022-07-27T14:25:52-05:00
 ---
 
 
-# Cómo usar Expresiones Regulares para revisar y reemplazar errores comunes en tus documentos
+<mark style="background: transparent!important; color: #ff79c6">Revisa y corrige errores comunes en tus textos usando RegEx</mark>
+
+___
+
+
+>**¿Qué necesitas?**
+> - Un editor de texto que soporte Búsqueda y Reemplazo con Expresiones Regulares
+> - Un texto (ojalá extenso) al cuál hacer la revisión
+
+>**¿Qué conseguirás?**
+> - Corregir los errores más comunes de mecanografía
+> - Acceder más rápidamente a los errores 
+
+
+
+Cuál es la idea de usar las Expresiones Regulares y cuándo usarlas al revisar un texto. <mark style="background: transparent!important; color: #50fa7b">Lo ideal es realizar primero la revisión con <strong>RegEx</strong> antes de hacer una revisión ortográfica y gramátical con las herramientas incluidas en el software de edición de textos que usas</mark>. 
 
 Esta pretende ser una guía rápida para aquellos que continuamente hacemos trabajo de escritura , especialmente en el desarrollo de trabajos extensos. La idea es proveer un set de fórmulas de expresiones regulares que puedan ser usadas en la revisión de textos. Dado que mis principales actividades de escritura provienen de la Universidad y la Investigación, la mayor parte de este set será especialmente útil para los académicos. 
 
@@ -19,16 +34,6 @@ Puede que muchos no lo sepan, pero por lo general los procesadores de texto ofre
 ---
 
 <!—Hay que señalar los que son manuales y los que admiten reemplazo automático —
-
-
-```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
-```
-
 
 - Buscar palabras repetidas
     ```
@@ -152,4 +157,3 @@ Sirve para adoptar el estilo de esccritura de una línea por oración el cual no
 ```
 [\.?](?=[ [])(?! *[\n\da-z])`
 ```
-
